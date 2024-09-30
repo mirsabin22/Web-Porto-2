@@ -95,6 +95,11 @@ section.work .card-container .card img {
     border-radius: 10px;
 }
 
+section.work .card-container .card.hoth img {
+    /* width: 101%; */
+    height: 257px;
+}
+
 section.work .card-container .card .desc {
     margin-top: 15px;
 }
