@@ -5,16 +5,10 @@
     font-family: 'Poppins';
 }
 
-/* [data-scroll-container] {
-    height: 100vh;
-    /* Tinggi penuh viewport */
-/* overflow: hidden; */
-/* Pastikan overflow disembunyikan oleh Locomotive Scroll */
-
 body {
     background-color: #1E1E1E;
     color: #FFFFFF;
-    height: 3000px;
+    /* height: 100%; */
     min-height: 100vh;
     display: flex;
     flex-direction: column;
