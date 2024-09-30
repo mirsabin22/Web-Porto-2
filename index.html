@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Porto</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a>WORK</a></li>
+            <li><a>ABOUT</a></li>
+            <li><a>CONTACT</a></li>
+        </ul>
+    </nav>
+    
+    <main>
+        <div class="title">
+            <h1>HI, I'M Mirsa</h1>
+        </div>
+        <div class="image">
+            <img src="./assets/image.png" alt="Image" />
+        </div>
+    </main>
+
+    <section class="work">
+        <h2>My Work</h2>
+        <div class="card-container">
+
+            <!-- First card -->
+            <div class="card">
+            <img src="assets/hoth.jpg" alt="Hoth" />
+            <div class="desc">
+                <div class="date">
+                    <span>Outer Rim</span>
+                    <span>Hoth shcichas</span>
+                </div>
+                <h1>Hoth</h1>
+                <p>Hoth was the sixth planet of the remote Hoth system...</p>
+            </div>
+            </div>
+
+            <!-- Second card -->
+            <div class="card">
+            <img src="assets/Endor_BF2.jpg" alt="Endor" />
+            <div class="desc">
+                <div class="date">
+                    <span>Outer Rim</span>
+                    <span>Endor moon</span>
+                </div>
+                <h1>Endor</h1>
+                <p>Endor, the forest moon, is known for the Rebel victory...</p>
+            </div>
+            </div>
+
+            <!-- Third card -->
+            <div class="card">
+            <img src="assets/Tatooine.jpg" alt="Tatooine" />
+            <div class="desc">
+                <div class="date">
+                    <span>Outer Rim</span>
+                    <span>Tatooine desert</span>
+                </div>
+                <h1>Tatooine</h1>
+                <p>Tatooine is a harsh desert planet orbiting twin suns...</p>
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about" data-scroll>
+        <h2>About Me</h2>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Deserunt sapiente error sed, fuga, aperiam nulla est sequi tempora obcaecati fugit laborum!
+            Neque sunt ipsum excepturi totam accusamus ipsam nostrum nulla!
+        </p>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact" data-scroll>
+        <h2>Contact</h2>
+        <p>Feel free to reach out to me for any collaboration or inquiries:</p>
+        <ul>
+            <li>Email:</li>
+            <li>Phone:</li>
+            <li>LinkedIn: <a href="#"></li>
+        </ul>
+    </section>
+</body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js"></script>
+<link
+    href="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.css"
+    rel="stylesheet"
+/>
+
+<!-- <script>
+    const scroll = new LocomotiveScroll({
+    el: document.querySelector("[data-scroll-container]"),
+    smooth: true,
+    inertia: 0.8,
+    });
+</script> -->
+</html>
