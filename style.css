@@ -3,7 +3,6 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins';
-    /* overflow: hidden; */
 }
 
 body {
@@ -11,7 +10,6 @@ body {
     color: #FFFFFF;
     height: 3000px;
     min-height: 100vh;
-    overflow: hidden;
     display: flex;
     flex-direction: column;
 }
@@ -86,27 +84,27 @@ section.work .card-container .card {
     border: 1px solid #444;
 }
 
-.card img {
+section.work .card-container .card img {
     width: 100%;
     border-radius: 10px;
 }
 
-.card .desc {
+section.work .card-container .card .desc {
     margin-top: 15px;
 }
 
-.card .date span {
+section.work .card-container .card .desc .date span {
     display: block;
     font-size: 12px;
     color: #aaa;
 }
 
-.card h1 {
+section.work .card-container .card .desc .card h1 {
     font-size: 24px;
     margin: 10px 0;
 }
 
-.card p {
+section.work .card-container .card .desc .card p {
     font-size: 14px;
     color: #ddd;
 }
