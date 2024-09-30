@@ -5,6 +5,12 @@
     font-family: 'Poppins';
 }
 
+/* [data-scroll-container] {
+    height: 100vh;
+    /* Tinggi penuh viewport */
+/* overflow: hidden; */
+/* Pastikan overflow disembunyikan oleh Locomotive Scroll */
+
 body {
     background-color: #1E1E1E;
     color: #FFFFFF;
