@@ -8,20 +8,20 @@
 <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js"></script>
 <link href="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.css" rel="stylesheet"/>
 
-    <!-- <script>
+    <script>
         document.addEventListener('DOMContentLoaded', function () {
     const scroll = new LocomotiveScroll({
         el: document.querySelector("[data-scroll-container]"),
-        smooth: true,
+        smooth: .1,
         inertia: 0.8,
     });
-}); -->
+});
 
     </script>
 
     <title>Porto</title>
 </head>
-<body>
+<body data-scroll-container>
     <nav>
         <ul>
             <li><a>WORK</a></li>
@@ -39,8 +39,8 @@
         </div>
     </main>
 
-    <section class="work">
-        <h2>My Work</h2>
+    <section class="work" data-scroll-container>
+        <h2 data-scroll-speed="5">My Work</h2>
         <div class="card-container">
             
             <!-- First card -->
