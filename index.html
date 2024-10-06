@@ -17,15 +17,15 @@
     
     <main data-scroll-container>
         <div class="title" data-scroll-container>
-            <h1 data-scroll-speed>HI, I'M Mirsa</h1>
+            <h1 class="animated-text" data-scroll-speed>HI, I'M Mirsa</h1>
         </div>
         <div class="image">
             <img src="./assets/image.png" alt="Image" />
         </div>
     </main>
-
+    
     <section class="work" data-scroll-container>
-        <h2 data-scroll-speed="5">My Work</h2>
+        <h2 class="animated-text" data-scroll-speed="5">My deployment</h2>
         <div class="card-container">
             
             <!-- First card -->
@@ -117,7 +117,6 @@
         </p>
     </section>
 
-    <!-- Contact Section -->
     <section id="contact" class="contact" data-scroll>
         <h2>Contact</h2>
         <p>Feel free to reach out to me for any collaboration or inquiries:</p>
@@ -136,9 +135,25 @@
     document.addEventListener('DOMContentLoaded', function () {
         const scroll = new LocomotiveScroll({
             el: document.querySelector("[data-scroll-container]"),
-            smooth: .1,
+            smooth: true,
             inertia: 0.8,
         });
+
+        const $animatedTextElements = $('.animated-text');
+        
+        $animatedTextElements.each(function() {
+            const $animatedText = $(this);
+            const text = $animatedText.text();
+            const chars = text.split('');
+            
+            const spanText = chars.map((letter, index) => {
+                return `<span data-scroll data-scroll-speed="1.5" data-scroll-delay="${index * 5}">${letter}</span>`;
+            }).join('');
+
+            $animatedText.html(spanText);
+        });
+
+        scroll.update();
     });
 </script>
 </html>
